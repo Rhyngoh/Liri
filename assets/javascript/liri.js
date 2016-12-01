@@ -13,12 +13,11 @@ var client = new Twitter({
   access_token_key: requireTwitter.twitterKeys.access_token_key,
   access_token_secret: requireTwitter.twitterKeys.access_token_secret
 });
-
+//function myTweets to show 20 most recent tweets
 function myTweets(){
 	var params = {screen_name: 'rhyngoh', count: 20};
 	client.get('statuses/user_timeline', params, function(error, tweets, response) {
 	  if (!error) {
-	    //console.log(tweets);
 	    for(var i = 0; i < tweets.length;i++){
 	    	console.log("Tweet #" + (i + 1));
 	    	console.log(tweets[i].created_at);
@@ -29,14 +28,18 @@ function myTweets(){
 	  console.log("\nYou're welcome.");
 	});
 }
+//function how many arguments if the user wants to put spaces in argument (search for "The Dark Knight")
 var argArray = [];
 var argString = "";
 function howManyArgs(){
 	for(var k = 3; k < process.argv.length;k++){
+		//push each argument into argArray
 		argArray.push(process.argv[k]);
 	}
+	//Turn the array into a string by joining at the spaces
 	argString = "'" + argArray.join(" ") + "'";
 }
+//function to perform a spotify search on a certain argument
 function spotifyDatSong(){
 	spotify.search({ type: 'track', query: argString }, function(err, data) {
     if ( err ) {
@@ -64,6 +67,7 @@ function spotifyDatSong(){
     
 });
 }
+//function to perform an omdb search on a certain argument
 function omdbDatMovie(){
 	var omdbString = argString.replace(" ", "%20");
 	request('http://www.omdbapi.com/?t=' + omdbString + '&y=&plot=short&r=json&tomatoes=true', function (error, response, body) {
@@ -82,6 +86,8 @@ function omdbDatMovie(){
 	  }
 	})
 }
+//What happens on user input:
+//If no input, throw some console logs
 if(process.argv[2] === undefined){
 	console.log("Liri detects you don't know what you're doing. Let Liri help you.\n\nList of commands: \nmy-tweets: Shows your last 20 tweets and when they were created\nspotify-this-song '<song name here>': Shows information about a song\nmovie-this '<movie name here>': Shows information about a movie\ndo-what-it-says: Takes text from a txt file to call a command\n\nYou're Welcome.");
 } else
@@ -143,5 +149,6 @@ if(process.argv[2] === "do-what-it-says"){
 	});
 }
 else {
+	//if mistyped anything, throw a console log
 	console.log("Liri detects you don't know what you're doing. Liri will assist you.\n\nList of commands: \nmy-tweets: Shows your last 20 tweets and when they were created\nspotify-this-song '<song name here>': Shows information about a song\nmovie-this '<movie name here>': Shows information about a movie\ndo-what-it-says: Takes text from a txt file to call a command\n\nYou're Welcome.");
 }

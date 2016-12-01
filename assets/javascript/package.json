@@ -1,0 +1,24 @@
+{
+  "name": "liri",
+  "version": "1.0.0",
+  "description": "Siri's knock off hillbilly brother, Liri. Retrieves tweets, spotify search, omdb search, and repeats stuff.",
+  "main": "liri.js",
+  "dependencies": {
+    "omdb": "^0.7.0",
+    "request": "^2.79.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Liri",
+    "Spotify",
+    "Twitter",
+    "OMDB"
+  ],
+  "author": "Ryan Ngoh",
+  "license": "ISC"
+}
