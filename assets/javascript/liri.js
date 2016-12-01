@@ -23,6 +23,8 @@ function myTweets(){
 	    	console.log(tweets[i].created_at);
 	    	console.log(tweets[i].text);
 	    	console.log("------------------");
+	    	var logTweet = "\nTweet #" + (i+1) + "\n" + tweets[i].created_at + "\n" + tweets[i].text + "\n------------------";
+	    	fs.appendFile("log.txt", logTweet);
 	    }
 	  }
 	  console.log("\nYou're welcome.");
@@ -63,6 +65,8 @@ function spotifyDatSong(){
 	    console.log("Song name: " + data.tracks.items[0].name);
 	    console.log("Preview song: " + data.tracks.items[0].preview_url);
 	    console.log("Album: " + data.tracks.items[0].album.name + "\n\nYou're welcome.");
+	    var logSpotify = "\nArtists: " + numberOfArtists + "\nSong name: " + data.tracks.items[0].name + "\nPreview Song: " + data.tracks.items[0].preview_url + "\nAlbum: " + data.tracks.items[0].album.name + "\n------------------";
+    	fs.appendFile("log.txt", logSpotify);
     }
     
 });
@@ -81,6 +85,10 @@ function omdbDatMovie(){
 	    console.log("Actors: " + JSON.parse(body).Actors);
 	    console.log("Rotten Tomatoes Rating: " + JSON.parse(body).tomatoMeter);
 	    console.log("Rotten Tomatoes URL: " + JSON.parse(body).tomatoURL + "\n\nYou're welcome.");
+	    var logOMDB = "\nMovie Title: " + JSON.parse(body).Title + "\nYear: " + JSON.parse(body).Year + "\nIMDB Rating: " + JSON.parse(body).imdbRating + 
+	    "\nCountry: " + JSON.parse(body).Country + "\nLanguage: " + JSON.parse(body).Language + "\nPlot: " + JSON.parse(body).Plot + 
+	    "\nActors: " + JSON.parse(body).Actors + "\nRotten Tomatoes Rating: " + JSON.parse(body).tomatoMeter + "\nRotten Tomatoes URL: " + JSON.parse(body).tomatoURL + "\n------------------";
+	  	fs.appendFile("log.txt", logOMDB);
 	  } else{
 	  	console.log("Could not find any movies with these search terms: " + argString + "\nTry another search.\n\nYou're welcome.");
 	  }

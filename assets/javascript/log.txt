@@ -1,0 +1,50 @@
+
+Tweet #1
+Wed Nov 30 14:22:27 +0000 2016
+https://t.co/c806x8TZPO Neat little google AI. It's actually improving the answers it gives
+------------------
+Tweet #2
+Tue Nov 29 15:01:55 +0000 2016
+Just finished our first project! Map Your Life!
+https://t.co/4a1Rip9qAC
+https://t.co/YyJBVLpRwK
+------------------
+Tweet #3
+Tue Nov 22 14:53:00 +0000 2016
+Neat comparison between SQL and mongoDB https://t.co/t9avokbu0R
+------------------
+Artists: Coldplay
+Song name: Hymn For The Weekend
+Preview Song: https://p.scdn.co/mp3-preview/0e36103f9c968a7f07d502003a109c314f36ae9c
+Album: A Head Full Of Dreams
+------------------
+Artists: Ace of Base
+Song name: The Sign
+Preview Song: https://p.scdn.co/mp3-preview/177e65fc2b8babeaf9266c0ad2a1cb1e18730ae4
+Album: The Sign (US Album) [Remastered]
+------------------
+Movie Title: Mr. Nobody
+Year: 2009
+IMDB Rating: 7.9
+Country: Belgium, Germany, Canada, France
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Rotten Tomatoes Rating: 64
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mr-nobody/
+------------------
+Movie Title: The Dark Knight
+Year: 2008
+IMDB Rating: 9.0
+Country: USA, UK
+Language: English, Mandarin
+Plot: When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.
+Actors: Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine
+Rotten Tomatoes Rating: 94
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/the_dark_knight/
+------------------
+Artists: Backstreet Boys
+Song name: I Want It That Way
+Preview Song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
+Album: The Hits--Chapter One
+------------------
